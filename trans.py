@@ -15,17 +15,14 @@ def banner(lo):
         sys.stdout.write(i)
         sys.stdout.flush()
         time.sleep(0.01)
-banner(f"""    
-{biru}[V.1[kroemen]]{kuning}▀█▀ █▀█ ▄▀█ █▄░█ █▀ █░░ ▄▀█ ▀█▀ █▀█ █▀█
-{biru}[  15/02/21  ]{hijau}░█░ █▀▄ █▀█ █░▀█ ▄█ █▄▄ █▀█ ░█░ █▄█ █▀▄{dilangit}
-\n""")
-
 
 def main():
     try:
         tran = Translator()
         print('Kode Bahasanya'.center(50,'='))
-        print(googletrans.LANGUAGES)
+        kode = googletrans.LANGUAGES
+        for kd,ng in kode.items():
+            print(kd,':',ng)
         print('='*50)
         print('Masukan Kode bahasa yg ingin kamu terjemahkan\n\text: B.jepang kodenya: ja ')
         ap = input("\nKode bahasa: ")
@@ -46,4 +43,9 @@ def main():
         print("[!]Mengulangi[!]".center(20))
         time.sleep(3)
         main()
-main()
+if __nam__:"__main__":
+    banner(f"""    
+    {biru}[V.2[kroemen]]{kuning}▀█▀ █▀█ ▄▀█ █▄░█ █▀ █░░ ▄▀█ ▀█▀ █▀█ █▀█
+    {biru}[  15/02/21  ]{hijau}░█░ █▀▄ █▀█ █░▀█ ▄█ █▄▄ █▀█ ░█░ █▄█ █▀▄{dilangit}\n""")
+    main()
+     

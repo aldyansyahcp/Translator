@@ -44,7 +44,7 @@ def main():
         time.sleep(3)
         main()
         
-if __name__:"__main__":
+if __name__=="__main__":
     banner(f"""    
     {biru}[V.2[kroemen]]{kuning}▀█▀ █▀█ ▄▀█ █▄░█ █▀ █░░ ▄▀█ ▀█▀ █▀█ █▀█
     {biru}[  15/02/21  ]{hijau}░█░ █▀▄ █▀█ █░▀█ ▄█ █▄▄ █▀█ ░█░ █▄█ █▀▄{dilangit}\n""")
